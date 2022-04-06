@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: "Nunito", sans-serif;
+	background-color: rgb(233, 233, 233);
+}
+
+.wrapper {
+    margin: 20px;
+	width: 750px;
+	background-color: #fff;
+	box-shadow: 0 0 10px #000;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-direction: column;
+	position: relative;
+	height: 350px;
+	padding: 30px 60px;
+	font-family: "Rubik Wet Paint", cursive;
+	background-image: url("../img/new-york-city-3803652_1920.jpg");
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.25);
+	z-index: -1;
+}
+
+.main-heading {
+	margin-bottom: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 2px 2px 5px #000;
+	letter-spacing: 8px;
+}
+
+.search-input {
+	padding: 10px 20px;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 16px;
+	background-color: rgba(255, 255, 255, 0.85);
+	border-radius: 10px;
+}
+
+.streets-container {
+	padding: 30px 60px;
+}
+
+.second-heading {
+	padding: 40px 0;
+}
+
+.streets-list {
+	padding-bottom: 30px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.streets-item {
+    padding: 7px 30px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+.streets-item:last-child {
+    border-bottom: 0
+}
