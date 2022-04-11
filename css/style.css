@@ -33,6 +33,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
+	cursor: default;
 }
 
 .shadow {
@@ -70,6 +71,7 @@ body {
 
 .second-heading {
 	padding: 40px 0;
+	cursor: default;
 }
 
 .streets-list {
@@ -81,7 +83,52 @@ body {
 .streets-item {
     padding: 7px 30px;
     border-bottom: 1px solid rgb(226, 226, 226);
+	cursor: pointer;
+	transition: color 0.3s;
 }
+
+.streets-item:hover{
+	color: rgb(13, 170, 162);
+}
+
 .streets-item:last-child {
     border-bottom: 0
+}
+
+.streets-popup{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	height: 30%;
+	text-align: center;
+	background-color: rgba(13, 170, 162, 0.95);
+	border: 1px solid black;
+	box-shadow: 0 0 10px #000;
+}
+
+.street-popup-heading{
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+.street-popup-describtion{
+	margin: 0 10px;
+	font-size: 18px;
+}
+
+.close-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px 10px;
+	font-size: 25px;
+	border: none;
+	background: none;
+	cursor: pointer;
 }
